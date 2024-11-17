@@ -1,0 +1,47 @@
+/**
+
+@mainpage EPL232 Homework 1 - Latin Square Game
+
+@author Spyros Gavriil
+@file README.dox
+@brief Documentation for EPL232 Homework 1 - Latin Square Game
+
+### Overview
+
+This program implements a Latin Square game where the player can interactively fill a square grid with numbers, adhering to the rules of a Latin square (no duplicate numbers in any row or column). The program provides a user interface for inserting or clearing values in the grid, as well as saving the game state to a file.
+
+The program includes the following key features:
+- Display of the current state of the Latin square in a structured format.
+- Command-based input for modifying the square (inserting or clearing values).
+- Input validation to prevent illegal moves such as duplicate values in rows or columns.
+- Saving the current state of the game to a file.
+- The ability to exit the game gracefully by saving the current progress.
+
+### How to Play
+
+1. The player will be presented with a Latin square grid. The grid contains cells where the player can input numbers.
+2. The player can input commands in the format `i,j=val`, where:
+   - `i` and `j` represent the row and column indices (1-based).
+   - `val` represents the value to be inserted. Use `0` to clear a cell.
+3. The player can input `0,0=0` to save the game state to a file and exit.
+4. The game automatically ends when all cells are filled with valid non-zero numbers.
+
+### Special Rules
+
+- A Latin square must contain no duplicate values in any row or column.
+- Certain cells may be "protected," meaning they cannot be cleared or modified once a value is placed there.
+- The input format strictly follows the `i,j=val` structure; incorrect formats will result in an error message.
+
+### Code Stability
+
+The code is stable and has been tested for normal gameplay. It handles most user errors gracefully, such as incorrect input formats or attempts to break the Latin square rules.
+
+### Known Bugs and Issues
+
+There are currently no known major bugs.
+
+### Final Notes
+
+The documentation here is accurate and reflects the final state of the project. Any changes or enhancements made after submission will be documented accordingly.
+
+**/

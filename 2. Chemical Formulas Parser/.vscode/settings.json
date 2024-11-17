@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "type_traits": "c",
+        "formula_parser.h": "c",
+        "stack.h": "c"
+    }
+}
